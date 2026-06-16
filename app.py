@@ -156,8 +156,7 @@ with tab1:
                     m3_slot.metric("Engine Failures", "0", "Clean Run", delta_color="inverse")
                 else:
                     t1_status.error("❌ Pipeline Halt: Ansible execution caught runtime errors.")
-                    m3_slot.metric("Engine Failures", "1", "+1 Error Check", delta_color="attention")
-
+                    m3_slot.metric("Engine Failures", "1", "+1 Error Check", delta_color="inverse")
 # ==========================================
 # TAB 2 & 3 SIMULATIONS FOR LOOKS
 # ==========================================
