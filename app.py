@@ -61,16 +61,26 @@ st.title("⚡ NetOps Enterprise Core Automation Center")
 st.markdown("`Domain: Production-Branch-Infrastructure` | `Role: Lead Infrastructure Engineer`")
 st.divider()
 
-# --- SIDEBAR: GLOBAL TARGET SELECTION ---
+# ... (Lines 60-61 on your screen showing st.title and st.markdown)
+
+# --- SIDEBAR GLOBAL TARGET SELECTION ---
 st.sidebar.header("🌐 Target Infrastructure Node")
 device_ip = st.sidebar.text_input("Target Management IP", value="localhost")
 ansible_user = st.sidebar.text_input("SSH Username", value="local_admin")
 ansible_password = st.sidebar.text_input("SSH Password", type="password", value="••••••••")
 
 st.sidebar.divider()
-st.sidebar.subheader("🔋 Node Telemetry Quick-Look")
-st.sidebar.progress(random.randint(12, 30), text="Core Processor Load")
-st.sidebar.progress(random.randint(50, 62), text="SRAM Memory Allocation")
+
+# 👇 PASTE THE NEW CODE BLOCK RIGHT HERE 👇
+
+tab1, tab2, tab3, tab4 = st.tabs([
+    "🚀 Configuration Pipeline", 
+    "📊 Real-Time Telemetry", 
+    "🔍 Auditor & Compliance", 
+    "🛡️ SecOps & Diagnostics"
+])
+
+# 👆 PASTE THE NEW CODE BLOCK RIGHT HERE 👆
 
 # --- ENTERPRISE TABBED INTERFACE ---
 tab1, tab2, tab3 = st.tabs(["🚀 Configuration Pipeline", "📊 Real-Time Telemetry", "🛠️ Diagnostics"])
