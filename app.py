@@ -80,11 +80,6 @@ tab1, tab2, tab3, tab4 = st.tabs([
     "🛡️ SecOps & Diagnostics"
 ])
 
-# 👆 PASTE THE NEW CODE BLOCK RIGHT HERE 👆
-
-# --- ENTERPRISE TABBED INTERFACE ---
-tab1, tab2, tab3 = st.tabs(["🚀 Configuration Pipeline", "📊 Real-Time Telemetry", "🛠️ Diagnostics"])
-
 # ==========================================
 # TAB 1: CONFIGURATION PIPELINE
 # ==========================================
