@@ -1,0 +1,16 @@
+---
+- name: Automated Enterprise Provisioning
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Set Device Hostname
+      debug:
+        msg: "Simulating configuration change: Hostname updated to {{ hostname_val }}"
+
+    - name: Configure LAN Interface
+      debug:
+        msg: "Simulating Interface provisioning: {{ lan_interface }} assigned to IP {{ lan_ip }}"
+
+    - name: Enable OSPF Routing
+      debug:
+        msg: "Simulating dynamic routing broadcast on network {{ lan_network }}"
